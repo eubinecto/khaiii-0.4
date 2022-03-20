@@ -59,13 +59,6 @@ class CustomBuild(build):
 #############
 # functions #
 #############
-def readme():
-    """
-    read content from README.md file
-    Returns:
-        long description (content of README.md)
-    """
-    return open('/content/khaiii/README.md', 'r', encoding='UTF-8').read()
 
 
 #########
@@ -75,7 +68,6 @@ setup(
     name='khaiii',
     version='0.4',
     description='Kakao Hangul Analyzer III',
-    long_description=readme(),
     url='https://github.com/kakao/khaiii',
     author='Kakao Corp.',
     author_email='jamie.lim@kakaocorp.com',
